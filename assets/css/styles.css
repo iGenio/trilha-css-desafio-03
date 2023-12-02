@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+p {
+    color: #515151;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-top: 8px;
+}
+
+button {
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+button.text {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+body {
+    margin: 0px;
+    background-color: #F9F9F9;
+    display: grid;
+    grid-template:
+	"header header " 56px
+	"sidebar main" 1fr/* define o nome tamanho da rows */
+	/ 1fr 5fr; /* define o comprimento (columns) */
+}
+
+header {
+    grid-area: header;
+    background-color: #FFF;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6px;
+}
+
+div.start {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: 24px;
+}
+
+div.search {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid #ccc;
+    width: 404px;
+}
+
+.icon2 {
+    height: 40px;
+    padding: 8px 12px;
+    background: #f8f8f8;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-right: 1px solid #ccc;
+    background: #FFF;
+    padding-left: 8px;
+    flex-grow: 2;
+}
+
+div.end {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: 24px;
+    justify-self: end;
+    margin-right: 24px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: repeat(10, 24px);
+    grid-gap: 22px;
+    padding: 24px;
+}
+
+.container {
+    margin: 24px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.video {
+    margin: 16px;
+}
+
+.video img {
+    width: 250px;
+    height: 140px;
+}
+
+.video-details {
+    margin-top: 24px;
+    display: flex;
+    align-items: top;
+    gap: 10px;
+}
+
+.video-details img {
+    width: 42px;
+    height: 42px;
+}
+
+
+
+strong  {
+    padding-bottom: 8px;
+}
